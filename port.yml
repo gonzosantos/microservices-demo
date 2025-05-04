@@ -1,0 +1,25 @@
+- identifier: some_identifier
+  title: Some Title
+  team: []
+  icon: DefaultBlueprint
+  blueprint: component
+  properties:
+    type: service
+    language: GO
+    lifecycle: Production
+    tier: Mission Critical
+    url: https://example.com
+    slackChannel: https://example.com
+    onCall: string
+  relations:
+    consumesApi:
+      - related_entity_identifier
+      - another_related_entity_identifier
+    system: related_entity_identifier
+    providesApi: related_entity_identifier
+    components:
+      - related_entity_identifier
+      - another_related_entity_identifier
+    resources:
+      - related_entity_identifier
+      - another_related_entity_identifier
